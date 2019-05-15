@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>  
+        <link rel="icon" 
+      type="image/png" 
+      href="bike2.png"> <title>BoomTour.sk
+       
+
+        </title>   
+        <meta charset="utf-9">  
+        <meta name="viewport" content="width=device-width, initial-scale=1">  
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">  
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>  
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>  
+        <style> 
+        body {
+    font: 400 15px/1.8 Lato, sans-serif;
+    color: #777;
+  }
+  h3, h4 {
+    margin: 10px 0 30px 0;      
+    font-size: 20px;
+    color: #111;
+  }
+  .container {
+    padding: 20px 50px;
+  }
+  .person {
+    border: 10px solid transparent;
+    margin-bottom: 25px;
+    width: 80%;
+    height: 80%;
+    opacity: 1;
+  }
+  .person:hover {
+    border-color: #f1f1f1;
+  }
+  .carousel-inner img {
+    width: 100%; /* Set width to 100% */
+    margin: auto;
+  }
+  .carousel-caption h3 {
+    color: #fff !important;
+  }
+  @media (max-width: 600px) {
+    .carousel-caption {
+      display: none; /* Hide the carousel text when the screen is less than 600 pixels wide */
+    }
+  }
+  .bg-1 {
+    background: #ffa500;
+    color: #ffa500;
+  }
+  .bg-1 h3 {color: #fff;}
+  .bg-1 p {font-style: italic;}
+
+  }
+  .thumbnail {
+    padding: 0 0 15px 0;
+    border: none;
+    border-radius: 0;
+  }
+  .thumbnail p {
+    margin-top: 15px;
+    color: #555;
+  }
+  .btn {
+    padding: 10px 20px;
+    background-color: #fff;
+    color: #000000;
+    border-radius: 0;
+    transition: .2s;
+  }
+  .btn:hover, .btn:focus {
+    border: 1px solid #333;
+    background-color: #ffb84d;
+    color: #000;
+  }
+  .modal-header, h4, .close {
+    background-color: #333;
+    color: #fff !important;
+    text-align: center;
+    font-size: 30px;
+  }
+  .modal-header, .modal-body {
+    padding: 40px 50px;
+  }
+  .nav-tabs li a {
+    color: #777;
+  } 
+  .navbar {
+    font-family: Montserrat, sans-serif;
+    margin-bottom: 0;
+    background-color: #ffa500;
+    border: 0;
+    font-size: 11px !important;
+    letter-spacing: 4px;
+    opacity: 0.9;
+  }
+  .navbar li a, .navbar .navbar-brand { 
+    color: #000000 !important;
+  }
+  .navbar-nav li a:hover {
+    color: #0066ff !important;
+  }
+  .navbar-nav li.active a {
+    color: #0066ff !important;
+    background-color:  !important;
+  }
+  .navbar-default .navbar-toggle {
+    border-color: #0066ff;
+  }
+  .open .dropdown-toggle {
+    color: #00FFFF;
+    background-color: #fff !important;
+  }
+  .dropdown-menu li a {
+    color: #000 !important;
+  }
+  .dropdown-menu li a:hover {
+    background-color: red !important;
+  }
+  footer {
+    background-color: #2d2d30;
+    color: #f5f5f5;
+    padding: 32px;
+  }
+  footer a {
+    color: #f5f5f5;
+  }
+  footer a:hover {
+    color: #777;
+    text-decoration: none;
+  }  
+  .form-control {
+    border-radius: 0;
+  }
+  textarea {
+    resize: none;
+  }   
+ 
+        </style>
+    </head>     
+    <body id="BoomTour.sk" data-spy="scroll" data-target=".navbar" data-offset="40">
+        <nav class="navbar navbar-default navbar-fixed-top">  
+            <div class="container-fluid">    
+                <div class="navbar-header">      
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">        
+                        <span class="icon-bar">
+                        </span>        
+                        <span class="icon-bar">
+                        </span>        
+                        <span class="icon-bar">
+                        </span>                               
+                    </button>      
+                    <a class="navbar-brand" href="#BoomTour.sk">BoomTour.sk</a>    
+                </div>    
+                <div class="collapse navbar-collapse" id="myNavbar">      
+                    <ul class="nav navbar-nav navbar-right">        
+                        <li>
+                        <a href="#DOMOV">DOMOV</a>
+                        </li>        
+                        <li>
+                        <a href="#PARTNERI">PARTNERI</a>
+                        </li>        
+                        <li>
+                        <a href="#TRASY">TRASY</a>
+                        </li> 
+                        <li> 
+                        <a href="#BIKEPARKY">BIKEPARKY</a> </li>       
+                        <li class="dropdown">          
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">VIAC           
+                                <span class="caret">
+                                </span></a>          
+                            <ul class="dropdown-menu">            
+                                <li>
+                                <a href="#KONTAKT">Kontakt</a>
+                        </li>                      
+                    </ul>        
+                    </li>              
+                    </ul>    
+                </div>  
+            </div>
+        </nav>
+        <div class="container">    
+            <div id="DOMOV" class="carousel slide" data-ride="carousel">    
+                <!-- Indicators -->    
+                <ol class="carousel-indicators">      
+                    <li data-target="#DOMOV" data-slide-to="0" class="active">
+                    </li>      
+                    <li data-target="#DOMOV" data-slide-to="1">
+                    </li>      
+                    <li data-target="#DOMOV" data-slide-to="2">
+                    </li>      
+                    <li data-target="#DOMOV" data-slide-to="3">
+                    </li>      
+                       
+                </ol>    
+                <!-- Wrapper for slides -->    
+                <div class="carousel-inner">      
+                    <div class="item active">        
+                        <img src="trekj2.jpg" alt="Downhill" > <div class="carousel-caption">   <h1>Jazdy na enduro a downhill tratiach</h1>    </div>  
+                    </div>      
+                    <div class="item">        
+                        <img src="2dhrj6.jpg" alt="Downhill2" >  <div class="carousel-caption">  <h1>NauËte sa rÙzne triky ktorÈ vyuûijete pri jazde</h1></div>
+                    </div>      
+                    <div class="item">        
+                        <img src="endw2.jpg" alt="Enduro">    <div class="carousel-caption">   <h1>RÙzne trasy v okolÌ Tatier</h1>  </div>  
+                    </div>      
+                    <div class="item">        
+                        <img src="fwfe.jpg" alt="Fabio Wibmer">  <div class="carousel-caption">   <h1 style=" color: #000000;">Lekcie downhillu s Fabiom Wibmerom</h1>  </div>         
+                    </div>        
+   
+                </div>    
+                <!-- Left and right controls -->    
+                <a class="left carousel-control" href="#DOMOV" data-slide="prev">      
+                    <span class="glyphicon glyphicon-chevron-left">
+                    </span>      
+                    <span class="sr-only">Previous
+                    </span>    </a>    
+                <a class="right carousel-control" href="#DOMOV" data-slide="next">      
+                    <span class="glyphicon glyphicon-chevron-right">
+                    </span>      
+                    <span class="sr-only">Next
+                    </span>    </a>  
+            </div>
+        </div>
+      <br>
+       <div  class="bg-1"> <div id="PARTNERI" class="container text-center"  >  <h1 style=" color: #fff;">Partneri</h1> 
+            <div class="row">    
+                <div class="col-sm-4">      
+                    <p class="text-center"><strong style=" color: #fff;">Fabio Wibmer</strong>
+                    </p>
+                    <br>      
+                    <a href="#demo2" data-toggle="collapse">        
+                        <img src="FWio.jpg" class="img-circle person" alt="Random Name" width="255" height="255">      </a>      
+                    <div id="demo2" class="collapse">      
+                        <p> 
+                            <a href="https://www.facebook.com/wibmerfabio/" target="_blank">Facebook</a> 
+                        </p>      
+                        <p> 
+                            <a href="https://www.instagram.com/wibmerfabio/?hl=sk" target="_blank">Instagram</a> 
+                        </p>       
+                        <p> 
+                            <a href="https://www.youtube.com/channel/UCHOtaAJCOBDUWIcL4372D9A" target="_blank">Youtube</a>  
+                        </p>               
+                    </div>    
+                </div>    
+                <div class="col-sm-4">      
+                    <p class="text-center"><strong style=" color: #fff;">Elias Schw‰rzler</strong>
+                    </p>
+                    <br>      
+                    <a href="#demo3" data-toggle="collapse">        
+                        <img src="ESo.jpg" class="img-circle person" alt="Random Name" width="255" height="255"> </a>      
+                    <div id="demo3" class="collapse">          
+                        <p>
+                            <a href="https://www.facebook.com/eliasschwaerzler/" target="_blank">Facebook</a>
+                        </p>        
+                        <p>
+                            <a href="https://www.instagram.com/elias_schwaerzler/?hl=sk" target="_blank">Instagram</a>
+                        </p>          
+                        <p>
+                            <a href="https://www.youtube.com/channel/UCGWOKYF5sq1iDkiScn-krPw" target="_blank">Youtube</a>
+                        </p>      
+                    </div>    
+                </div>     
+                <div class="col-sm-4">      
+                    <p class="text-center"><strong style=" color: #fff;">Filip Polc</strong>
+                    </p>
+                    <br>      
+                    <a href="#demo" data-toggle="collapse">        
+                        <img src="FFo.png" class="img-circle person" alt="Random Name" width="255" height="255">      </a>      
+                    <div id="demo" class="collapse">        
+                        <p>
+                            <a href="https://www.facebook.com/polcster" target="_blank">Facebook</a>
+                        </p>       
+                        <p>
+                            <a href="https://www.instagram.com/polcster/?hl=sk" target="_blank">Instagram</a>
+                        </p>        
+                        <p>
+                            <a href="https://www.youtube.com/channel/UC-1T6Qo3TagMKRjQntTMiYw" target="_blank">Youtube</a>
+                        </p>      
+                    </div>        
+                </div>    
+            </div>
+            </div>
+            </div>
+             <br>
+             <div id="TRASY" class="container text-center"> <h1 style=" color: #ffa500;">
+                                                            TRASY
+                                                           </h1> <img src="skic.jpg" alt="skic.jpg, 290kB" title="skic" border="2" height="336" width="600">
+                           <H3>  
+                             Str·nka, kde s˙ vyznaËenÈ vöetky cyklistickÈ trasy a skupinovÈ v˝jazdy na Slovensku </H3> 
+                             <H3>1.Vytvor si ˙Ëet <br>
+            2.Na tejto str·nke si mÙûeö nahr·vaù svoju aktivitu z GPS 
+            <br>3.Sleduj tvoje umiestnenie v tabuæke v poËte kilometrov a najazden˝ch hodÌn </H3>  <h2> <a style="text-decoration: underline; color: #ffa500;" href="https://www.mtbiker.sk/vyjazdy" target="_blank">MTBiker.sk</a> </h2>
+                             
+                                                                   
+                             
+            
+                </div>
+                <div class="bg-1"><div class="container text-center"> <h1 style= "color: #fff">
+                                                                       CYKLOTRASY
+                                                                      </h1> <H3>  <br>
+                Str·nka kde si mÙûete vybraù trasu podæa n·roËnosti alebo dÂûky vo svojom okrese</H3>
+                <h3>
+                 1.Vyber si svoj okres
+                 <br> 2.Vyber si svoju n·roËnosù   <br>
+                 3.Nastav si vzdialenosù a typ trasy  <br>
+                 4. N·jdi si svoju trasu a vyraz na jazdu! <br>    </h3>
+                                         <h2>            <a style="text-decoration: underline; color: #fff" href="https://www.mtbiker.sk/cyklotrasy/liptov" target="_blank">Cyklotrasy</a>     </h2>
+                </div> </div>
+                <div id="BIKEPARKY" >
+                 <div class="container text-center">
+                  <h1 style="color: #ffa500">Bikeparky </h1>
+                  <h3 style="color: #000000"> Zoznam vöetk˝ch otvoren˝ch bikeparkov na Slovensku</h3>   
+            <h3>       <a style="text-decoration: underline;  color: #ffa500;" href="https://www.bikepark.sk/aktivity/bike-park/o-bike-parku/" target="_blank">BikePark MalinÙ Brdo</a> <br>
+                   <a style="text-decoration: underline;  color: #ffa500;" href="http://www.bikecentrumkalnica.sk" target="_blank">BikePark K·lnica</a>   <br>
+                   <a style="text-decoration: underline;  color: #ffa500;" href="http://bikeparkkoliba.sk" target="_blank">BikePark Koliba</a>       <br>
+                   <a style="text-decoration: underline;  color: #ffa500;" href="http://bikeparkgruniky.com" target="_blank">BikePark Gruniky</a>        <br>
+                   <a style="text-decoration: underline;  color: #ffa500;" href="https://www.facebook.com/BikeParkCervenyBreh" target="_blank">BikePark »erven˝ Breh</a>   <br>
+                   <a style="text-decoration: underline;  color: #ffa500;" href="https://www.lanovky.sk/?page=rep&id=478" target="_blank">BikePark Jasn·</a>       
+                   
+                  </h3>
+                 </div>
+                </div> 
+                
+                
+                
+        <div  class="bg-1"> <div id="contact" class="container">
+  <h2 class="text-center" style="color: #fff">Kontakt</h2>
+  <p class="text-center"><em style="color: #fff">Dajte n·m vedieù ak potrebujete pomoc </em></p>
+
+  <div class="row">
+    <div class="col-md-4">
+      <h2 style="color: #fff">Info</h2>
+      <p style="color: #fff"><span class="glyphicon glyphicon-map-marker"></span>Slovensko, Liptov</p>
+      <p style="color: #fff"><span class="glyphicon glyphicon-phone"></span>Tel. ËÌslo: 0911 569 680</p>
+      <p style="color: #fff"><span class="glyphicon glyphicon-envelope"></span>Email: alexander.fodor66@gmail.com</p>
+    </div>
+    <div class="col-md-8">
+      <div class="row">
+        <div class="col-sm-6 form-group">
+          <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+        </div>
+        <div class="col-sm-6 form-group">
+          <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+        </div>
+      </div>
+      <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea>
+      <br>
+      <div class="row">
+        <div class="col-md-12 form-group">
+          <button class="btn pull-right" type="submit">Send</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div >
+  </div>
+  </body>  </html>
